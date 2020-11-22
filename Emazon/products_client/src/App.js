@@ -97,7 +97,7 @@ export default class App extends Component {
       <div>
         <Header></Header>
         <NewForm handleAddProduct={this.handleAddProduct} />
-        <Inventory products={ this.state.products }/>
+        <Inventory products={ this.state.products } deleteProduct={ this.state.deleteProduct }/>
         <ShoppingPage></ShoppingPage>
         <ProductGrid />
         <ProductCart />
