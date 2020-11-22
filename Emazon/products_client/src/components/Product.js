@@ -3,11 +3,11 @@ import React, { Component } from "react";
 export default class ProductBox extends Component {
   render() {
     return ( 
-      <div key={this.props.product._id}>
+      <div>
         <h1>Product Component</h1>
         <ul key={this.props.product._id}>
             <li>
-                <h3>Product: {this.props.product.name}</h3>
+                <h3 key="">Product: {this.props.product.name}</h3>
             </li>
             <li>Price: ${this.props.product.price} </li>
             <br />
