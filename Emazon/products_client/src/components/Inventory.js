@@ -5,10 +5,10 @@ export default class Inventory extends Component {
         return (
             <div className="productBox">
                 <h1>Inventory Component</h1>
-                {this.props.products.map((product, _id) => {
+                {this.props.products.map((product) => {
                     return (
                         <div >
-                            <ProductBox product={ product } key={ _id } deleteProduct={ this.props.deleteProduct } />
+                            <ProductBox product={ product } key={ product._id } deleteProduct={ this.props.deleteProduct } showProduct={ this.props.showProduct } />
                             
                         </div>
                     );
