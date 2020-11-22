@@ -12,7 +12,7 @@ export default class Header extends Component {
       
 
       <div className="container">
-          <div className="Banner">
+          {/* <div className="Banner"> */}
           <ListGroup horizontal className="list">
            
            <ListGroup.Item>Gift Cards</ListGroup.Item>
@@ -73,7 +73,7 @@ export default class Header extends Component {
         
        </div>
           
-          </div>
+          {/* </div> */}
   
           <div className="SearchBar">
             <form onSubmit={this.handleSubmit}>
