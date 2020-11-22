@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import ListGroup from 'react-bootstrap/ListGroup';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Carousel from 'react-bootstrap/Carousel'
 
 export default class Header extends Component {
   render() {
     return (
       <div className="container">
-          <div className="Banner">
+          {/* <div className="Banner"> */}
           <ListGroup horizontal className="list">
            
            <ListGroup.Item>Gift Cards</ListGroup.Item>
@@ -68,7 +67,7 @@ export default class Header extends Component {
         
        </div>
           
-          </div>
+          {/* </div> */}
   
           <div className="SearchBar">
             <form onSubmit={this.handleSubmit}>
