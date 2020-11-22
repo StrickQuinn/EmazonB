@@ -35,7 +35,6 @@ export default class ProductBox extends Component {
             </div>
       </div>
     )
-
   }
 }
 
