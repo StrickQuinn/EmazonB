@@ -7,14 +7,7 @@ export default class Header extends Component {
     return (
       <div className="container">
           {/* <div className="Banner"> */}
-          <ListGroup horizontal className="list">
-           
-           <ListGroup.Item>Gift Cards</ListGroup.Item>
-           <ListGroup.Item> Get Ultra</ListGroup.Item>
-           <ListGroup.Item>Find a Gift</ListGroup.Item>
-           <ListGroup.Item>Special Sales</ListGroup.Item>
-           <ListGroup.Item>We are Hiring </ListGroup.Item>
-         </ListGroup>
+       
   
   
          <div className="carousel-container">
@@ -55,7 +48,15 @@ export default class Header extends Component {
           </Carousel.Item>
           </Carousel> 
   </div>
-  
+      
+  <ListGroup horizontal className="list">
+           
+           <ListGroup.Item>Gift Cards</ListGroup.Item>
+           <ListGroup.Item> Get Ultra</ListGroup.Item>
+           <ListGroup.Item>Find a Gift</ListGroup.Item>
+           <ListGroup.Item>Special Sales</ListGroup.Item>
+           <ListGroup.Item>We are Hiring </ListGroup.Item>
+         </ListGroup>
        
               <h1 >E-Mazon</h1>
              <br />
