@@ -8,9 +8,6 @@ export default class Header extends Component {
     return (
       <div className="container">
           {/* <div className="Banner"> */}
-<<<<<<< HEAD
-       
-=======
           <ListGroup horizontal className="list">
            
            <Link to="/">
@@ -32,7 +29,6 @@ export default class Header extends Component {
            <ListGroup.Item>Cart</ListGroup.Item>
            </Link>
          </ListGroup>
->>>>>>> 4f8bfa2b3042e9a6103e769eeca25121f9e63634
   
   
          <div className="carousel-container">
