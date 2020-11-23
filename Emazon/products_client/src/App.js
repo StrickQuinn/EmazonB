@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LandingPage from './components/LandingPage';
 import NewForm from "./components/NewForm.js";
 import Header from "./components/Header.js";
 import ShoppingPage from "./components/ShoppingPage.js";
@@ -6,6 +7,8 @@ import "./index.css";
 import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
 import Inventory from "./components/Inventory.js";
+import Login from "./components/Login.js";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 console.log("App");
 const baseURL = "http://localhost:3003";
@@ -94,14 +97,21 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header></Header>
-        <NewForm handleAddProduct={this.handleAddProduct} />
-        <Inventory products={ this.state.products } deleteProduct={ this.deleteProduct }/>
-        <ShoppingPage></ShoppingPage>
-        <ProductGrid />
-        <ProductCart />
-      </div>
+      <Router>
+        <div>
+          <Header />  
+          <Switch>
+            <Route path="/" exact component= {LandingPage} />     
+            <Route path="/new" component= { NewForm } handleAddProduct={this.handleAddProduct} /> {/* NewForm handleAddProduct={this.handleAddProduct} */}
+            <Route path="/inventory" component= {Inventory } products={ this.state.products } deleteProduct={ this.deleteProduct } /> {/* Inventory products={ this.state.products } deleteProduct={ this.deleteProduct } */}
+            <Route path="/shop" component= { ShoppingPage } />
+            <Route path="/product" component= { ProductGrid } />
+            <Route path="/cart" component={ProductCart} />
+            <Route path="/login" component={ Login } />
+          </Switch>
+        </div>
+      </Router>
+      
     );
   }
 }
