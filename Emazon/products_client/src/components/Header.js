@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ListGroup from 'react-bootstrap/ListGroup';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -10,11 +10,24 @@ export default class Header extends Component {
           {/* <div className="Banner"> */}
           <ListGroup horizontal className="list">
            
-           <ListGroup.Item>Gift Cards</ListGroup.Item>
-           <ListGroup.Item> Get Ultra</ListGroup.Item>
-           <ListGroup.Item>Find a Gift</ListGroup.Item>
-           <ListGroup.Item>Special Sales</ListGroup.Item>
-           <ListGroup.Item>We are Hiring </ListGroup.Item>
+           <Link to="/">
+           <ListGroup.Item>Home</ListGroup.Item>
+           </Link>
+           <Link to="/shop">
+           <ListGroup.Item>Shop</ListGroup.Item>
+           </Link>
+           <Link to="/new">
+           <ListGroup.Item>New Item</ListGroup.Item>
+           </Link>
+           <Link to="/inventory">
+           <ListGroup.Item>Inventory</ListGroup.Item>
+           </Link>
+           <Link to="/product">
+           <ListGroup.Item>Show</ListGroup.Item>
+           </Link>
+           <Link to="/cart">
+           <ListGroup.Item>Cart</ListGroup.Item>
+           </Link>
          </ListGroup>
   
   
