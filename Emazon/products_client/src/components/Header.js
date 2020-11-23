@@ -10,16 +10,16 @@ export default class Header extends Component {
           {/* <div className="Banner"> */}
           <ListGroup horizontal className="list">
            
-           <Link to="/">
+           <Link to="/" >
            <ListGroup.Item>Home</ListGroup.Item>
            </Link>
            <Link to="/shop">
            <ListGroup.Item>Shop</ListGroup.Item>
            </Link>
-           <Link to="/new">
+           <Link to="/new" handleAddProduct={this.handleAddProduct}>
            <ListGroup.Item>New Item</ListGroup.Item>
            </Link>
-           <Link to="/inventory">
+           <Link to="/inventory" products={ this.props.products } deleteProduct={ this.deleteProduct }>
            <ListGroup.Item>Inventory</ListGroup.Item>
            </Link>
            <Link to="/product">
@@ -29,7 +29,7 @@ export default class Header extends Component {
            <ListGroup.Item>Cart</ListGroup.Item>
            </Link>
          </ListGroup>
-  
+         
   
          <div className="carousel-container">
          <Carousel className="carousel">
@@ -73,7 +73,7 @@ export default class Header extends Component {
        
               <h1 >E-Mazon</h1>
              <br />
-            <img ClassName="logo"  />
+            <img ClassName="logo"  alt=""/>
             <i className="fa fa-shopping-cart"></i>
             <div className="navbar">
          
