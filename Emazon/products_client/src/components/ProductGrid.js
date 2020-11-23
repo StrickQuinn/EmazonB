@@ -8,7 +8,7 @@ export default class ProductGrid extends Component {
                 <div className="row">
                     {/* wrap this in a loop that produces additional div*/}
                     <div>
-                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="185px" alt='' />
+                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="100px" alt='' />
                         <button className="view-product-btn">View</button>{/* button positioned at higher z-index and positioned over image*/}
                         <ul>
                                 <li>Product Brand</li>
@@ -18,7 +18,7 @@ export default class ProductGrid extends Component {
                     </div>
                     {/* wrap this in a loop that produces additional div*/}
                     <div>
-                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="185px" alt='' />
+                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="100px" alt='' />
                         <button className="view-product-btn">View</button>{/* button positioned at higher z-index and positioned over image*/}
                         <ul>
                                 <li>Product Brand</li>
@@ -29,7 +29,7 @@ export default class ProductGrid extends Component {
                 </div>
                 <div  className="row">
                     <div>
-                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="185px" alt='' />
+                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="100px" alt='' />
                         <button className="view-product-btn">View</button>{/* button positioned at higher z-index and positioned over image*/}
                         <ul>
                                 <li>Product Brand</li>
@@ -38,7 +38,7 @@ export default class ProductGrid extends Component {
                         </ul>
                     </div>
                     <div>
-                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="185px" alt='' />
+                        <img src="https://media.gq-magazine.co.uk/photos/5dbc4d5a8da8f900083b9076/master/w_1000,c_limit/20191028-watch-guide-baume.jpg" width="100px" alt='' />
                         <button className="view-product-btn">View</button>{/* button positioned at higher z-index and positioned over image*/}
                         <ul>
                                 <li>Product Brand</li>
