@@ -8,10 +8,16 @@ import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
 import Inventory from "./components/Inventory.js";
 import Login from "./components/Login.js";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 console.log("App");
 const baseURL = "http://localhost:3003";
+
+
+
+
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -94,7 +100,8 @@ export default class App extends Component {
       this.setState({ products: copyProducts });
     });
   }
-
+  
+  
   render() {
     return (
       <Router>
@@ -102,8 +109,8 @@ export default class App extends Component {
           <Header />  
           <Switch>
             <Route path="/" exact component= {LandingPage} />     
-            <Route path="/new" component= { NewForm } handleAddProduct={this.handleAddProduct} /> {/* NewForm handleAddProduct={this.handleAddProduct} */}
-            <Route path="/inventory" component= {Inventory } products={ this.state.products } deleteProduct={ this.deleteProduct } /> {/* Inventory products={ this.state.products } deleteProduct={ this.deleteProduct } */}
+            <Route path="/new" component= {()=> <NewForm handleAddProduct={this.handleAddProduct}/> } />
+            <Route path="/inventory" component= {()=> <Inventory products={ this.state.products } deleteProduct={ this.deleteProduct } />}  />
             <Route path="/shop" component= { ShoppingPage } />
             <Route path="/product" component= { ProductGrid } />
             <Route path="/cart" component={ProductCart} />
