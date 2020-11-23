@@ -1,13 +1,38 @@
 import React, { Component } from "react";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
     return (
       <div className="container">
           {/* <div className="Banner"> */}
+<<<<<<< HEAD
        
+=======
+          <ListGroup horizontal className="list">
+           
+           <Link to="/">
+           <ListGroup.Item>Home</ListGroup.Item>
+           </Link>
+           <Link to="/shop">
+           <ListGroup.Item>Shop</ListGroup.Item>
+           </Link>
+           <Link to="/new">
+           <ListGroup.Item>New Item</ListGroup.Item>
+           </Link>
+           <Link to="/inventory">
+           <ListGroup.Item>Inventory</ListGroup.Item>
+           </Link>
+           <Link to="/product">
+           <ListGroup.Item>Show</ListGroup.Item>
+           </Link>
+           <Link to="/cart">
+           <ListGroup.Item>Cart</ListGroup.Item>
+           </Link>
+         </ListGroup>
+>>>>>>> 4f8bfa2b3042e9a6103e769eeca25121f9e63634
   
   
          <div className="carousel-container">
