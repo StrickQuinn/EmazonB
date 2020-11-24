@@ -56,13 +56,13 @@ ___
 ___
 ### **Stephanie**
 <!-- What was your group's biggest struggle? -->
-*
+* Our group's biggest struggle was finding our rhythm. We all came from different levels of understanding materials, different study/work patterns, and different coding styles. The first method of getting together and setting up the frame, and delegating out parts of the project slowed us down more than we expected. We had difficulty with commits and merges, but found our pace by Friday evening. Saturday morning, we all started on a good note and on the same page, and us coding together with LiveShare and regular meetups throughout the day really helped. I feel when we worked this way, we were able to accomplish soo much more, and learn new materials as well. 
 <!-- Explain a key feature you worked on. -->
-*
+* I helped get the props passed through the components, and got the add function working properly. Had we more time, I would have finished making an edit form component with a constructor build similar to our new form component, and make sure to fetch it with a function in the App.js file.
 <!-- Explain a technical challenge you came across. Was it solved? How? -->
-*
+* We knew we were going to need to use a way to switch between views in React. Jeff found a really great video on YouTube that everyone watched, we tried to work on it together, but were a little brain-fried. We made it a study/homework assignment that night, and we would touch base again the next morning. This helped us grasp the new concept better. Winton was able to get the switches to work 90% by the time morning came around.
 <!-- Explain what improvements you would make for version 2.0. -->
-*
+* Complete Login Authentication -- Romane was working on this at the end of the project. Edit -- That was my next task. Cart -- complete its function. Vendor/Customer -- separate views to render dependent on login credentials.
 ___
 ### **Winton**
 <!-- What was the most useful tool that your group relied on the most? -->
