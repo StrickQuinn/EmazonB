@@ -7,7 +7,7 @@ const Product = require("../models/products.js");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 
-// index
+// index FF I like try to get it
 products.get("/", (req, res) => {
   Product.find({}, (error, foundProducts) => {
     if (error) {

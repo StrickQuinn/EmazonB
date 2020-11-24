@@ -5,7 +5,7 @@ export default class Login extends Component {
   render() {
 
     return (
-      <div className="ProductBox">
+      <div className="container">
         <h1>Welcome To E-mazon</h1>
         <h1>Please Log In</h1>
         <form action="/products" method="POST"> 

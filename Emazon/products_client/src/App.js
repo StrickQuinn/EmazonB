@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LandingPage from './components/LandingPage';
+import LandingPage from "./components/LandingPage";
 import NewForm from "./components/NewForm.js";
 import Header from "./components/Header.js";
 import ShoppingPage from "./components/ShoppingPage.js";
@@ -8,15 +8,10 @@ import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
 import Inventory from "./components/Inventory.js";
 import Login from "./components/Login.js";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Registration from "./components/Registration.js";
 console.log("App");
 const baseURL = "http://localhost:3003";
-
-
-
-
-
 
 export default class App extends Component {
   constructor(props) {
@@ -54,7 +49,7 @@ export default class App extends Component {
       });
   }
 
-    // trying out a show method //
+  // trying out a show method //
   showProduct(id) {
     fetch(baseURL + "/products/" + id, {
       method: "PUT",
@@ -64,9 +59,9 @@ export default class App extends Component {
         (product) => product._id === id
       );
       this.setState({
-        product: copyProducts[findIndex]
-      })
-    })
+        product: copyProducts[findIndex],
+      });
+    });
   }
 
   toggleinStock(product) {
@@ -100,25 +95,52 @@ export default class App extends Component {
       this.setState({ products: copyProducts });
     });
   }
-  
-  
+
+  // //FIX EDIT ROUTE
+  // editProduct(id) {
+  //   fetch(baseURL + "/products/" + id + "/edit", {
+  //     method: "PUT",
+  //   }).then((response) => {
+  //     const findIndex = this.state.products.findIndex(
+  //       (product) => product._id === id
+  //     );
+  //     const copyProducts = [...this.state.products];
+  //     // copyProducts.splice(findIndex, 1);
+  //     this.setState({ products: copyProducts });
+  //   });
+  // }
+
   render() {
     return (
       <Router>
         <div>
-          <Header />  
+          <Header />
           <Switch>
-            <Route path="/" exact component= {LandingPage} />     
-            <Route path="/new" component= {()=> <NewForm handleAddProduct={this.handleAddProduct}/> } />
-            <Route path="/inventory" component= {()=> <Inventory products={ this.state.products } deleteProduct={ this.deleteProduct } />}  />
-            <Route path="/shop" component= { ShoppingPage } />
-            <Route path="/product" component= { ProductGrid } />
+            <Route path="/" exact component={LandingPage} />
+            <Route
+              path="/new"
+              component={() => (
+                <NewForm handleAddProduct={this.handleAddProduct} />
+              )}
+            />
+            <Route
+              path="/inventory"
+              component={() => (
+                <Inventory
+                  products={this.state.products}
+                  deleteProduct={this.deleteProduct}
+                />
+              )}
+            /> 
+            {/* <Route path="login" component={Login} /> */}
+            <Route path="/shop" component={ShoppingPage} />
+            <Route path="/Registration" component={Registration} />
+            <Route path="/product" component={ProductGrid} />
             <Route path="/cart" component={ProductCart} />
-            <Route path="/login" component={ Login } />
+            <Route path="/login" component={Login} />
           </Switch>
         </div>
       </Router>
-      
     );
   }
 }
