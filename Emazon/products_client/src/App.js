@@ -1,14 +1,23 @@
 import React, { Component } from "react";
+import LandingPage from './components/LandingPage';
 import NewForm from "./components/NewForm.js";
 import Header from "./components/Header.js";
-import ShoppingPage from "./components/ShoppingPage";
+import ShoppingPage from "./components/ShoppingPage.js";
 import "./index.css";
 import ProductGrid from "./components/ProductGrid.js";
 import ProductCart from "./components/ProductCart.js";
 import Inventory from "./components/Inventory.js";
+import Login from "./components/Login.js";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 console.log("App");
 const baseURL = "http://localhost:3003";
+
+
+
+
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +55,7 @@ export default class App extends Component {
   }
 
     // trying out a show method //
-    showProduct(id) {
+  showProduct(id) {
     fetch(baseURL + "/products/" + id, {
       method: "PUT",
     }).then((response) => {
@@ -91,17 +100,25 @@ export default class App extends Component {
       this.setState({ products: copyProducts });
     });
   }
-
+  
+  
   render() {
     return (
-      <div>
-        <Header></Header>
-        <Inventory products={ this.state.products }/>
-        <NewForm handleAddProduct={this.handleAddProduct} />
-        <ShoppingPage></ShoppingPage>
-        <ProductGrid />
-        <ProductCart />
-      </div>
+      <Router>
+        <div>
+          <Header />  
+          <Switch>
+            <Route path="/" exact component= {LandingPage} />     
+            <Route path="/new" component= {()=> <NewForm handleAddProduct={this.handleAddProduct}/> } />
+            <Route path="/inventory" component= {()=> <Inventory products={ this.state.products } deleteProduct={ this.deleteProduct } />}  />
+            <Route path="/shop" component= { ShoppingPage } />
+            <Route path="/product" component= { ProductGrid } />
+            <Route path="/cart" component={ProductCart} />
+            <Route path="/login" component={ Login } />
+          </Switch>
+        </div>
+      </Router>
+      
     );
   }
 }
