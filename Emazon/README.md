@@ -26,13 +26,23 @@ ___
 ___
 ### **Jeff**
 <!-- What was the most surprising aspect of working in a group/a thing (or things) you didn’t anticipate? -->
-*
+* Learning version control in Github requires careful coordination and communication. 
+
+Also, the way people approach problems and overall software construction varies pretty widely based on learning styles. I learn best by pulling apart something that works and understanding how the parts fit. On personal projects, I dive in and start tinkering immediately.  This project involved learning new tech in addition to extensive planning, so I think the entire group had to meet in the middle so that everyone can learn. Taking time to watch videos and take notes independently was useful for giving everyone an opportunity to learn in their own way. 
+
 <!-- Explain a key feature you worked on. -->
-*
+* 1. Initial setup of base level server and app so we could all see our work visually
+  2. Github solutions to merge conflicts
+  3. Display of data in views.
+  4. Early design of navbar and header styles and several components
+  5. Heroku deployment 
 <!-- Explain a technical challenge you came across. Was it solved? How? -->
-*
+* Showing and hiding views was a multiple day challenge. I tried several tricks using toggle before we found React Router. Ultimately, Winton implemented React router and this allowed us to separate views. The greatest technical challenge was actually version control. We spent a lot of time troubleshooting merges before finally landing on a working system.
 <!-- Explain what improvements you would make for version 2.0. -->
-*
+These are suggestions for improving the operation of our team in coding:
+* Establish live share as part of the workflow if this were to continue. People can split up and work on different features without worrying too much about version control. I would like to see authentication and Stripe payments in the future.
+* Assign a Studying concept to work on the following day together. We did this with react router and I feel like the whole group understood it well as a result. More focus on identifying what we will need in terms of code and knowledge acquisition earlier in the project week.
+
 ___
 ### **Romane**
 <!-- What went well for your group? -->
