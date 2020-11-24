@@ -46,13 +46,13 @@ These are suggestions for improving the operation of our team in coding:
 ___
 ### **Romane**
 <!-- What went well for your group? -->
-*
+* our group was very organized. we gave each other specific task and helped each other as much as we could. i would say our team work was the one of the best out of all the groups and would love to work together again.
 <!-- Explain a key feature you worked on. -->
-*
-<!-- Explain a technical challenge you came across. Was it solved? How? -->
+* i worked on setting up the header component and while using bootstrap was able to create a carousel that can be utilized for advertising items on sale, and special promotions. kind of proud of that little addition to the project
+<!-- Explain a technical challenge you came across. Was it solved? How? --> i found creating a authentication system to be the most challenging. i tried it towards the end of the project but was only able to set up 0auth portion but didnt understand enough to completely get the rest of it done.
 *
 <!-- Explain what improvements you would make for version 2.0. -->
-*
+* Allow users to create there own profiles and logins for a more personalised experience. users will be able add items to their cart and save items for later purchase. i would also improve on my css a bit more and add support for desktop.
 ___
 ### **Stephanie**
 <!-- What was your group's biggest struggle? -->
